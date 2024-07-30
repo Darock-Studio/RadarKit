@@ -67,7 +67,7 @@ extension EnvironmentValues {
     }
 }
 
-extension View {
+public extension View {
     /// 在“反馈助理”页面中显示常见问题
     /// - Parameter view: 常见问题导航到的页面
     func radarFAQView<T>(_ view: T) -> some View where T: View {
