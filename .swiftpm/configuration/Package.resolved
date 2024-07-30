@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Darock-Studio/DarockKit",
       "state" : {
-        "branch" : "main",
-        "revision" : "c36f40dc6174d729836a9fe1cb45bd18573589e5"
+        "revision" : "c36f40dc6174d729836a9fe1cb45bd18573589e5",
+        "version" : "1.2.1"
       }
     },
     {

@@ -13,7 +13,7 @@ let package = Package(
             targets: ["RadarKit"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/Darock-Studio/DarockKit", branch: "main")
+        .package(url: "https://github.com/Darock-Studio/DarockKit", from: "1.2.1")
     ],
     targets: [
         .target(
