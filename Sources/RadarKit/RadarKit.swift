@@ -407,6 +407,7 @@ public struct RKFeedbackView: View {
                                 .sheet(isPresented: $isDetailSelectorPresented, content: {
                                     attachmentSelector { key, value in
                                         attachments.append([key, value])
+                                        isDetailSelectorPresented = false
                                     }
                                 })
                             }
@@ -452,7 +453,14 @@ public struct RKFeedbackView: View {
                             State：0
                             Type：\(feedbackType)
                             Content：\(contentInputs.joined(separator: "\\n"))
-                            Time：\(Date.now.timeIntervalSince1970)\(extDiags)
+                            Time：\(Date.now.timeIntervalSince1970)\(extDiags)\({ () -> String in
+                            guard !attachments.isEmpty else { return "" }
+                            var tmp = ""
+                            for attachment in attachments {
+                            tmp += "\n\(attachment[0])：\(attachment[1])"
+                            }
+                            return tmp
+                            }())
                             NotificationToken：\(UserDefaults.standard.string(forKey: "UserNotificationToken") ?? "None")
                             Sender: User
                             """

@@ -28,10 +28,10 @@ extension EnvironmentValues {
 }
 
 struct FeedbackAttachmentSelectorKey: EnvironmentKey {
-    static var defaultValue: (((String, String) -> Void) -> AnyView)?
+    static var defaultValue: ((@escaping (String, String) -> Void) -> AnyView)?
 }
 extension EnvironmentValues {
-    var FeedbackAttachmentSelector: (((String, String) -> Void) -> AnyView)? {
+    var FeedbackAttachmentSelector: ((@escaping (String, String) -> Void) -> AnyView)? {
         get { self[FeedbackAttachmentSelectorKey.self] }
         set { self[FeedbackAttachmentSelectorKey.self] = newValue }
     }
@@ -102,7 +102,7 @@ public extension View {
     /// Value 会同时显示在“附件”列表中。
     ///
     /// - Parameter view: 附件选择页，RadarKit 将其使用 sheet 推出。
-    func radarAttachmentSelector<T>(@ViewBuilder _ view: @escaping ((String, String) -> Void) -> T) -> some View where T: View {
+    func radarAttachmentSelector<T>(@ViewBuilder _ view: @escaping (@escaping (String, String) -> Void) -> T) -> some View where T: View {
         self.environment(\.FeedbackAttachmentSelector) { closure in
             AnyView(view(closure))
         }

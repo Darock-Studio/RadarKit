@@ -11,7 +11,11 @@
         }
       }
     },
+    "“反馈助理”不可用，因为%@有更新可用" : {
+
+    },
     "“反馈助理”不可用，因为暗礁浏览器有更新可用" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
