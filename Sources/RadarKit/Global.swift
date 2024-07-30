@@ -74,3 +74,12 @@ func getSettingsForAppdiagnose(dataProcessor: (inout [String: Any]) -> Void = { 
     }
     return nil
 }
+
+@ViewBuilder
+internal func Text(_ key: LocalizedStringKey) -> some View {
+    Text(key, bundle: .module)
+}
+@ViewBuilder
+internal func Label(_ key: String.LocalizationValue, systemImage: String) -> some View {
+    SwiftUI.Label(String(localized: key, bundle: .module), systemImage: systemImage)
+}

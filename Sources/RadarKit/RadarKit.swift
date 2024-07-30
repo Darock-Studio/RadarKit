@@ -180,7 +180,7 @@ public struct RKFeedbackView: View {
                 }
             }
         }
-        .navigationTitle("反馈助理")
+        .navigationTitle(String(localized: "反馈助理", bundle: .module))
         .onAppear {
             feedbackIds = UserDefaults.standard.stringArray(forKey: "RadarFBIDs") ?? [String]()
             supportIds = UserDefaults.standard.stringArray(forKey: "SupportIDs") ?? [String]()
@@ -478,7 +478,7 @@ public struct RKFeedbackView: View {
                     }
                 }
             }
-            .navigationTitle("提交反馈")
+            .navigationTitle(String(localized: "提交反馈", bundle: .module))
             .navigationBarBackButtonHidden()
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
@@ -502,7 +502,7 @@ public struct RKFeedbackView: View {
                 
                 newFeedbackAction?()
             }
-            .alert("移除诊断信息", isPresented: $isRemoveDiagAlertPresented, actions: {
+            .alert(String(localized: "移除诊断信息", bundle: .module), isPresented: $isRemoveDiagAlertPresented, actions: {
                 Button(role: .destructive, action: {
                     dontSendDiagnose = true
                 }, label: {
@@ -517,7 +517,7 @@ public struct RKFeedbackView: View {
             }, message: {
                 Text("移除诊断信息会限制我们理解并解决问题的能力。")
             })
-            .alert("未完成的编辑", isPresented: $isDraftAlertPresented, actions: {
+            .alert(String(localized: "未完成的编辑", bundle: .module), isPresented: $isDraftAlertPresented, actions: {
                 Button(role: .destructive, action: {
                     UserDefaults.standard.removeObject(forKey: "FeedbackNewDraftTitle")
                     UserDefaults.standard.removeObject(forKey: "FeedbackNewDraftContent")
