@@ -7,13 +7,17 @@
 ### `RKFeedbackLink`
 指向反馈页面的 NavigationLink
 #### 参数
-`checkUpdate`: 检查更新设置
-
 `projectName`: 项目名
+
+`showProjectName`: 显示的 App 名称
 
 `gatherAppdiagnose`: 收集 App 诊断信息
 
 `showUnderstandStatus`: 显示“了解反馈状态”
+
+`checkUpdate`: 检查更新设置
+
+`showsReplyBadge`: 显示新回复数角标
 
 ---
 

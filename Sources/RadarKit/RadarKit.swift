@@ -4,6 +4,7 @@ import SwiftDate
 
 public struct RKFeedbackLink: View {
     var projName: String
+    var showProjName: String
     var gatherAppdiagnose: Bool
     var showUnderstandStatus: Bool
     var updateCheckMethod: RKUpdateCheckMethod
@@ -13,13 +14,15 @@ public struct RKFeedbackLink: View {
     @State private var newFeedbackCount = 0
     
     /// 指向反馈页面的 NavigationLink
-    /// - Parameter checkUpdate: 检查更新设置
     /// - Parameter projectName: 项目名
+    /// - Parameter showProjectName: 显示的 App 名称
     /// - Parameter gatherAppdiagnose: 收集 App 诊断信息
     /// - Parameter showUnderstandStatus: 显示“了解反馈状态”
+    /// - Parameter checkUpdate: 检查更新设置
     /// - Parameter showsReplyBadge: 显示新回复数角标
-    public init(projectName: String, gatherAppdiagnose: Bool = true, showUnderstandStatus: Bool = true, checkUpdate: RKUpdateCheckMethod = .none, showsReplyBadge: Bool = true) {
+    public init(projectName: String, showProjectName: String, gatherAppdiagnose: Bool = true, showUnderstandStatus: Bool = true, checkUpdate: RKUpdateCheckMethod = .none, showsReplyBadge: Bool = true) {
         projName = projectName
+        showProjName = showProjectName
         self.gatherAppdiagnose = gatherAppdiagnose
         self.showUnderstandStatus = showUnderstandStatus
         updateCheckMethod = checkUpdate
@@ -43,7 +46,7 @@ public struct RKFeedbackLink: View {
                     Text("反馈助理")
                 }
                 if isNewVerAvailable || newVerBinding.wrappedValue {
-                    Text("“反馈助理”不可用，因为暗礁浏览器有更新可用")
+                    Text("“反馈助理”不可用，因为\(showProjName)有更新可用")
                         .font(.system(size: 12))
                         .multilineTextAlignment(.center)
                 }
