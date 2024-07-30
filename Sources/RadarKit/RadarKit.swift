@@ -9,6 +9,11 @@ public struct RKFeedbackLink: View {
     var showUnderstandStatus: Bool
     var updateCheckMethod: RKUpdateCheckMethod
     var showsReplyBadge: Bool
+    @Environment(\.FeedbackTitleSample) private var titleSample
+    @Environment(\.FeedbackAttachmentSelector) private var attachmentSelector
+    @Environment(\.FeedbackExtData) private var extData
+    @Environment(\.Tipper) private var tipper
+    @Environment(\.NewFeedbackAction) private var newFeedbackAction
     @State private var isNewVerAvailable = false
     @State private var newVerBinding: Binding<Bool> = .constant(false)
     @State private var newFeedbackCount = 0
@@ -30,67 +35,72 @@ public struct RKFeedbackLink: View {
     }
     
     public var body: some View {
-        NavigationStack {
-            NavigationLink(destination: { RKFeedbackView(projName: projName, gatherAppdiagnose: gatherAppdiagnose, showUnderstandStatus: showUnderstandStatus) }, label: {
-                VStack {
-                    HStack {
-                        ZStack(alignment: .topTrailing) {
-                            Image(systemName: "exclamationmark.bubble")
-                                .font(.system(size: 20))
-                            if showsReplyBadge && newFeedbackCount > 0 {
-                                Text("\(newFeedbackCount)")
-                                    .font(.system(size: 12, weight: .medium))
-                                    .background(Circle().fill(Color.red).frame(width: 15, height: 15).opacity(1.0))
-                                    .offset(x: 3, y: -5)
-                            }
+        NavigationLink(destination: {
+            RKFeedbackView(projName: projName, gatherAppdiagnose: gatherAppdiagnose, showUnderstandStatus: showUnderstandStatus)
+                .environment(\.FeedbackTitleSample, titleSample)
+                .environment(\.FeedbackAttachmentSelector, attachmentSelector)
+                .environment(\.FeedbackExtData, extData)
+                .environment(\.Tipper, tipper)
+                .environment(\.NewFeedbackAction, newFeedbackAction)
+        }, label: {
+            VStack {
+                HStack {
+                    ZStack(alignment: .topTrailing) {
+                        Image(systemName: "exclamationmark.bubble")
+                            .font(.system(size: 20))
+                        if showsReplyBadge && newFeedbackCount > 0 {
+                            Text("\(newFeedbackCount)")
+                                .font(.system(size: 12, weight: .medium))
+                                .background(Circle().fill(Color.red).frame(width: 15, height: 15).opacity(1.0))
+                                .offset(x: 3, y: -5)
                         }
-                        Text("反馈助理")
                     }
-                    if isNewVerAvailable || newVerBinding.wrappedValue {
-                        Text("“反馈助理”不可用，因为\(showProjName)有更新可用")
-                            .font(.system(size: 12))
-                            .multilineTextAlignment(.center)
-                    }
+                    Text("反馈助理")
                 }
-            })
-            .disabled(isNewVerAvailable || newVerBinding.wrappedValue)
-            .onAppear {
-                if case .auto(let url) = updateCheckMethod {
-                    DarockKit.Network.shared.requestString(url) { respStr, isSuccess in
-                        if isSuccess {
-                            let spdVer = respStr.apiFixed().split(separator: ".")
-                            if spdVer.count == 3 {
-                                if let x = Int(spdVer[0]), let y = Int(spdVer[1]), let z = Int(spdVer[2]) {
-                                    let currVerSpd = (Bundle.main.infoDictionary?["CFBundleShortVersionString"] as! String).split(separator: ".")
-                                    if currVerSpd.count == 3 {
-                                        if let cx = Int(currVerSpd[0]), let cy = Int(currVerSpd[1]), let cz = Int(currVerSpd[2]) {
-                                            if x > cx {
-                                                isNewVerAvailable = true
-                                            } else if x == cx && y > cy {
-                                                isNewVerAvailable = true
-                                            } else if x == cx && y == cy && z > cz {
-                                                isNewVerAvailable = true
-                                            }
+                if isNewVerAvailable || newVerBinding.wrappedValue {
+                    Text("“反馈助理”不可用，因为\(showProjName)有更新可用")
+                        .font(.system(size: 12))
+                        .multilineTextAlignment(.center)
+                }
+            }
+        })
+        .disabled(isNewVerAvailable || newVerBinding.wrappedValue)
+        .onAppear {
+            if case .auto(let url) = updateCheckMethod {
+                DarockKit.Network.shared.requestString(url) { respStr, isSuccess in
+                    if isSuccess {
+                        let spdVer = respStr.apiFixed().split(separator: ".")
+                        if spdVer.count == 3 {
+                            if let x = Int(spdVer[0]), let y = Int(spdVer[1]), let z = Int(spdVer[2]) {
+                                let currVerSpd = (Bundle.main.infoDictionary?["CFBundleShortVersionString"] as! String).split(separator: ".")
+                                if currVerSpd.count == 3 {
+                                    if let cx = Int(currVerSpd[0]), let cy = Int(currVerSpd[1]), let cz = Int(currVerSpd[2]) {
+                                        if x > cx {
+                                            isNewVerAvailable = true
+                                        } else if x == cx && y > cy {
+                                            isNewVerAvailable = true
+                                        } else if x == cx && y == cy && z > cz {
+                                            isNewVerAvailable = true
                                         }
                                     }
                                 }
                             }
                         }
                     }
-                } else if case .manual(let binding) = updateCheckMethod {
-                    newVerBinding = binding
                 }
-                if showsReplyBadge {
-                    newFeedbackCount = 0
-                    let feedbackIds = UserDefaults.standard.stringArray(forKey: "RadarFBIDs") ?? [String]()
-                    for id in feedbackIds {
-                        DarockKit.Network.shared.requestString("https://fapi.darock.top:65535/radar/details/\(projName)/\(id)") { respStr, isSuccess in
-                            if isSuccess {
-                                let repCount = respStr.apiFixed().components(separatedBy: "---").count - 1
-                                let lastViewCount = UserDefaults.standard.integer(forKey: "RadarFB\(id)ReplyCount")
-                                if repCount > lastViewCount {
-                                    newFeedbackCount++
-                                }
+            } else if case .manual(let binding) = updateCheckMethod {
+                newVerBinding = binding
+            }
+            if showsReplyBadge {
+                newFeedbackCount = 0
+                let feedbackIds = UserDefaults.standard.stringArray(forKey: "RadarFBIDs") ?? [String]()
+                for id in feedbackIds {
+                    DarockKit.Network.shared.requestString("https://fapi.darock.top:65535/radar/details/\(projName)/\(id)") { respStr, isSuccess in
+                        if isSuccess {
+                            let repCount = respStr.apiFixed().components(separatedBy: "---").count - 1
+                            let lastViewCount = UserDefaults.standard.integer(forKey: "RadarFB\(id)ReplyCount")
+                            if repCount > lastViewCount {
+                                newFeedbackCount++
                             }
                         }
                     }
