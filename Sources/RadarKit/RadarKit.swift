@@ -30,65 +30,67 @@ public struct RKFeedbackLink: View {
     }
     
     public var body: some View {
-        NavigationLink(destination: { RKFeedbackView(projName: projName, gatherAppdiagnose: gatherAppdiagnose, showUnderstandStatus: showUnderstandStatus) }, label: {
-            VStack {
-                HStack {
-                    ZStack(alignment: .topTrailing) {
-                        Image(systemName: "exclamationmark.bubble")
-                            .font(.system(size: 20))
-                        if showsReplyBadge && newFeedbackCount > 0 {
-                            Text("\(newFeedbackCount)")
-                                .font(.system(size: 12, weight: .medium))
-                                .background(Circle().fill(Color.red).frame(width: 15, height: 15).opacity(1.0))
-                                .offset(x: 3, y: -5)
+        NavigationStack {
+            NavigationLink(destination: { RKFeedbackView(projName: projName, gatherAppdiagnose: gatherAppdiagnose, showUnderstandStatus: showUnderstandStatus) }, label: {
+                VStack {
+                    HStack {
+                        ZStack(alignment: .topTrailing) {
+                            Image(systemName: "exclamationmark.bubble")
+                                .font(.system(size: 20))
+                            if showsReplyBadge && newFeedbackCount > 0 {
+                                Text("\(newFeedbackCount)")
+                                    .font(.system(size: 12, weight: .medium))
+                                    .background(Circle().fill(Color.red).frame(width: 15, height: 15).opacity(1.0))
+                                    .offset(x: 3, y: -5)
+                            }
                         }
+                        Text("反馈助理")
                     }
-                    Text("反馈助理")
+                    if isNewVerAvailable || newVerBinding.wrappedValue {
+                        Text("“反馈助理”不可用，因为\(showProjName)有更新可用")
+                            .font(.system(size: 12))
+                            .multilineTextAlignment(.center)
+                    }
                 }
-                if isNewVerAvailable || newVerBinding.wrappedValue {
-                    Text("“反馈助理”不可用，因为\(showProjName)有更新可用")
-                        .font(.system(size: 12))
-                        .multilineTextAlignment(.center)
-                }
-            }
-        })
-        .disabled(isNewVerAvailable || newVerBinding.wrappedValue)
-        .onAppear {
-            if case .auto(let url) = updateCheckMethod {
-                DarockKit.Network.shared.requestString(url) { respStr, isSuccess in
-                    if isSuccess {
-                        let spdVer = respStr.apiFixed().split(separator: ".")
-                        if spdVer.count == 3 {
-                            if let x = Int(spdVer[0]), let y = Int(spdVer[1]), let z = Int(spdVer[2]) {
-                                let currVerSpd = (Bundle.main.infoDictionary?["CFBundleShortVersionString"] as! String).split(separator: ".")
-                                if currVerSpd.count == 3 {
-                                    if let cx = Int(currVerSpd[0]), let cy = Int(currVerSpd[1]), let cz = Int(currVerSpd[2]) {
-                                        if x > cx {
-                                            isNewVerAvailable = true
-                                        } else if x == cx && y > cy {
-                                            isNewVerAvailable = true
-                                        } else if x == cx && y == cy && z > cz {
-                                            isNewVerAvailable = true
+            })
+            .disabled(isNewVerAvailable || newVerBinding.wrappedValue)
+            .onAppear {
+                if case .auto(let url) = updateCheckMethod {
+                    DarockKit.Network.shared.requestString(url) { respStr, isSuccess in
+                        if isSuccess {
+                            let spdVer = respStr.apiFixed().split(separator: ".")
+                            if spdVer.count == 3 {
+                                if let x = Int(spdVer[0]), let y = Int(spdVer[1]), let z = Int(spdVer[2]) {
+                                    let currVerSpd = (Bundle.main.infoDictionary?["CFBundleShortVersionString"] as! String).split(separator: ".")
+                                    if currVerSpd.count == 3 {
+                                        if let cx = Int(currVerSpd[0]), let cy = Int(currVerSpd[1]), let cz = Int(currVerSpd[2]) {
+                                            if x > cx {
+                                                isNewVerAvailable = true
+                                            } else if x == cx && y > cy {
+                                                isNewVerAvailable = true
+                                            } else if x == cx && y == cy && z > cz {
+                                                isNewVerAvailable = true
+                                            }
                                         }
                                     }
                                 }
                             }
                         }
                     }
+                } else if case .manual(let binding) = updateCheckMethod {
+                    newVerBinding = binding
                 }
-            } else if case .manual(let binding) = updateCheckMethod {
-                newVerBinding = binding
-            }
-            if showsReplyBadge {
-                newFeedbackCount = 0
-                let feedbackIds = UserDefaults.standard.stringArray(forKey: "RadarFBIDs") ?? [String]()
-                for id in feedbackIds {
-                    DarockKit.Network.shared.requestString("https://fapi.darock.top:65535/radar/details/\(projName)/\(id)") { respStr, isSuccess in
-                        if isSuccess {
-                            let repCount = respStr.apiFixed().components(separatedBy: "---").count - 1
-                            let lastViewCount = UserDefaults.standard.integer(forKey: "RadarFB\(id)ReplyCount")
-                            if repCount > lastViewCount {
-                                newFeedbackCount++
+                if showsReplyBadge {
+                    newFeedbackCount = 0
+                    let feedbackIds = UserDefaults.standard.stringArray(forKey: "RadarFBIDs") ?? [String]()
+                    for id in feedbackIds {
+                        DarockKit.Network.shared.requestString("https://fapi.darock.top:65535/radar/details/\(projName)/\(id)") { respStr, isSuccess in
+                            if isSuccess {
+                                let repCount = respStr.apiFixed().components(separatedBy: "---").count - 1
+                                let lastViewCount = UserDefaults.standard.integer(forKey: "RadarFB\(id)ReplyCount")
+                                if repCount > lastViewCount {
+                                    newFeedbackCount++
+                                }
                             }
                         }
                     }
@@ -136,65 +138,67 @@ public struct RKFeedbackView: View {
     }
     
     public var body: some View {
-        List {
-            Section {
-                NavigationLink(destination: { NewFeedbackView(projName: projName, gatherAppdiagnose: gatherAppdiagnose) }, label: {
-                    Label("新建反馈", systemImage: "exclamationmark.bubble.fill")
-                })
-                .accessibilityIdentifier("NewFeedbackButton")
-                if let faqView {
-                    NavigationLink(destination: { faqView }, label: {
-                        Label("常见问题", systemImage: "sparkles")
-                    })
-                }
-                if showUnderstandStatus {
-                    NavigationLink(destination: { StateMeaningsView() }, label: {
-                        Label("了解反馈状态", systemImage: "bolt.badge.clock")
-                    })
-                }
-            } footer: {
-                if faqView != nil {
-                    Text("提交反馈前，请先检查常见问题")
-                }
-            }
-            if feedbackIds.count != 0 {
+        NavigationStack {
+            List {
                 Section {
-                    ForEach(0..<feedbackIds.count, id: \.self) { i in
-                        NavigationLink(destination: { FeedbackDetailView(id: feedbackIds[i], projName: projName) }, label: {
-                            HStack {
-                                if badgeOnIds.contains(feedbackIds[i]) {
-                                    Image(systemName: "1.circle.fill")
-                                        .foregroundColor(.red)
-                                }
-                                Text("ID: \(feedbackIds[i])")
-                            }
+                    NavigationLink(destination: { NewFeedbackView(projName: projName, gatherAppdiagnose: gatherAppdiagnose) }, label: {
+                        Label("新建反馈", systemImage: "exclamationmark.bubble.fill")
+                    })
+                    .accessibilityIdentifier("NewFeedbackButton")
+                    if let faqView {
+                        NavigationLink(destination: { faqView }, label: {
+                            Label("常见问题", systemImage: "sparkles")
                         })
-                        .swipeActions {
-                            Button(role: .destructive, action: {
-                                feedbackIds.remove(at: i)
-                                UserDefaults.standard.set(feedbackIds, forKey: "RadarFBIDs")
-                            }, label: {
-                                Image(systemName: "xmark.bin.fill")
-                            })
-                        }
                     }
-                } header: {
-                    Text("发送的反馈")
+                    if showUnderstandStatus {
+                        NavigationLink(destination: { StateMeaningsView() }, label: {
+                            Label("了解反馈状态", systemImage: "bolt.badge.clock")
+                        })
+                    }
+                } footer: {
+                    if faqView != nil {
+                        Text("提交反馈前，请先检查常见问题")
+                    }
+                }
+                if feedbackIds.count != 0 {
+                    Section {
+                        ForEach(0..<feedbackIds.count, id: \.self) { i in
+                            NavigationLink(destination: { FeedbackDetailView(id: feedbackIds[i], projName: projName) }, label: {
+                                HStack {
+                                    if badgeOnIds.contains(feedbackIds[i]) {
+                                        Image(systemName: "1.circle.fill")
+                                            .foregroundColor(.red)
+                                    }
+                                    Text("ID: \(feedbackIds[i])")
+                                }
+                            })
+                            .swipeActions {
+                                Button(role: .destructive, action: {
+                                    feedbackIds.remove(at: i)
+                                    UserDefaults.standard.set(feedbackIds, forKey: "RadarFBIDs")
+                                }, label: {
+                                    Image(systemName: "xmark.bin.fill")
+                                })
+                            }
+                        }
+                    } header: {
+                        Text("发送的反馈")
+                    }
                 }
             }
-        }
-        .navigationTitle(String(localized: "反馈助理", bundle: .module))
-        .onAppear {
-            feedbackIds = UserDefaults.standard.stringArray(forKey: "RadarFBIDs") ?? [String]()
-            supportIds = UserDefaults.standard.stringArray(forKey: "SupportIDs") ?? [String]()
-            badgeOnIds.removeAll()
-            for id in feedbackIds {
-                DarockKit.Network.shared.requestString("https://fapi.darock.top:65535/radar/details/\(projName)/\(id)") { respStr, isSuccess in
-                    if isSuccess {
-                        let repCount = respStr.apiFixed().components(separatedBy: "---").count - 1
-                        let lastViewCount = UserDefaults.standard.integer(forKey: "RadarFB\(id)ReplyCount")
-                        if repCount > lastViewCount {
-                            badgeOnIds.append(id)
+            .navigationTitle(String(localized: "反馈助理", bundle: .module))
+            .onAppear {
+                feedbackIds = UserDefaults.standard.stringArray(forKey: "RadarFBIDs") ?? [String]()
+                supportIds = UserDefaults.standard.stringArray(forKey: "SupportIDs") ?? [String]()
+                badgeOnIds.removeAll()
+                for id in feedbackIds {
+                    DarockKit.Network.shared.requestString("https://fapi.darock.top:65535/radar/details/\(projName)/\(id)") { respStr, isSuccess in
+                        if isSuccess {
+                            let repCount = respStr.apiFixed().components(separatedBy: "---").count - 1
+                            let lastViewCount = UserDefaults.standard.integer(forKey: "RadarFB\(id)ReplyCount")
+                            if repCount > lastViewCount {
+                                badgeOnIds.append(id)
+                            }
                         }
                     }
                 }
