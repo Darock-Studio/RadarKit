@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct FAQViewKey: EnvironmentKey {
+struct FAQViewKey: EnvironmentKey, Equatable {
     static var defaultValue: AnyView? = nil
 }
 extension EnvironmentValues {
@@ -17,7 +17,7 @@ extension EnvironmentValues {
     }
 }
 
-struct FeedbackTitleSampleKey: EnvironmentKey {
+struct FeedbackTitleSampleKey: EnvironmentKey, Equatable {
     static var defaultValue: LocalizedStringKey = ""
 }
 extension EnvironmentValues {
@@ -27,7 +27,7 @@ extension EnvironmentValues {
     }
 }
 
-struct FeedbackAttachmentSelectorKey: EnvironmentKey {
+struct FeedbackAttachmentSelectorKey: EnvironmentKey, Equatable {
     static var defaultValue: ((@escaping (String, String) -> Void) -> AnyView)?
 }
 extension EnvironmentValues {
@@ -37,7 +37,7 @@ extension EnvironmentValues {
     }
 }
 
-struct FeedbackExtDataKey: EnvironmentKey {
+struct FeedbackExtDataKey: EnvironmentKey, Equatable {
     static var defaultValue: [String: String] = [:]
 }
 extension EnvironmentValues {
@@ -47,7 +47,7 @@ extension EnvironmentValues {
     }
 }
 
-struct TipperKey: EnvironmentKey {
+struct TipperKey: EnvironmentKey, Equatable {
     static var defaultValue: ((LocalizedStringKey, String) -> Void)?
 }
 extension EnvironmentValues {
@@ -57,7 +57,7 @@ extension EnvironmentValues {
     }
 }
 
-struct NewFeedbackActionKey: EnvironmentKey {
+struct NewFeedbackActionKey: EnvironmentKey, Equatable {
     static var defaultValue: (() -> Void)?
 }
 extension EnvironmentValues {
