@@ -308,7 +308,29 @@ public struct RKFeedbackView: View {
                                                             .lineLimit(1)
                                                     }
                                                 })
-                                                
+                                                if !extData.isEmpty {
+                                                    let keys = Array(extData.keys)
+                                                    ForEach(0..<keys.count, id: \.self) { i in
+                                                        NavigationLink(destination: {
+                                                            ScrollView {
+                                                                HStack {
+                                                                    Text(extData[keys[i]]!)
+                                                                        .font(.system(size: 13, design: .monospaced))
+                                                                        .multilineTextAlignment(.leading)
+                                                                    Spacer()
+                                                                }
+                                                            }
+                                                        }, label: {
+                                                            HStack {
+                                                                Image(systemName: "doc")
+                                                                    .foregroundColor(.purple)
+                                                                Text("\(keys[i]).drkdatae")
+                                                                    .font(.system(size: 12))
+                                                                    .lineLimit(1)
+                                                            }
+                                                        })
+                                                    }
+                                                }
                                                 if let settings = getSettingsForAppdiagnose() {
                                                     NavigationLink(destination: {
                                                         ScrollView {

@@ -1,0 +1,932 @@
+{
+  "sourceLanguage" : "zh-Hans",
+  "strings" : {
+    "" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        }
+      }
+    },
+    "“反馈助理”不可用，因为暗礁浏览器有更新可用" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Feedback Assistant not available, because Darock Browser has an update available"
+          }
+        }
+      }
+    },
+    "[Hex Data]" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "[Hex Data]"
+          }
+        }
+      }
+    },
+    "[Privacy Hidden]" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "[Privacy Hidden]"
+          }
+        }
+      }
+    },
+    "%@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
+        }
+      }
+    },
+    "%@：反馈暂未被阅读，或是正在验证问题。\n\n%@：报告中描述的是预期中的表现。\n\n%@：报告中的问题无法被修复，或是不具有可行性。\n\n%@：在你提交此报告前，已有另一人提出了相同的问题，你仍会在第一个报告得到修复后收到“已修复”的状态更新。\n        你的报告可能会与那些初看似乎具有相同根源的类似报告分到一组。但是，类似的报告也可能包含多种原因。如果你发现该修复方案解决了类似报告中的问题，但无法完全解决你报告的问题，请提交新报告。\n\n%@：短时间内可能无法解决此问题。\n\n%@：Darock 正在为此问题提供修复方案。\n\n%@：修复工作已完成，但还未提交更新或是更新正在等待发布。\n\n%@：修复工作已完成，可更新至最新版本验证修复。\n\n%@：报告与 App 本身无关，或是问题并非由 App 本身引起。\n\n%@：未能通过报告中的问题复现问题，需要提供更多信息。\n\n%@：提供的信息不足以让我们确定问题，你需要补充更多信息。" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@: Feedback has not been read yet, or the issue is being verified.\n\n%2$@: The report describes the expected behavior.\n\n%3$@: The issue in the report cannot be fixed or is not feasible.\n\n%4$@: Before you submitted this report, someone else had already raised the same issue. You will still receive a \"Fixed\" status update after the first report is resolved.\n        Your report may be grouped with similar reports that initially seem to have the same root cause. However, similar reports may also contain multiple causes. If you find that the fix resolves the issue in the similar reports but does not fully resolve your reported issue, please submit a new report.\n\n%5$@: This issue may not be resolved in a short period of time.\n\n%6$@: Darock is working on a fix for this issue.\n\n%7$@: The fix has been completed but the update has not been submitted or the update is pending release.\n\n%8$@: The fix has been completed, please update to the latest version to verify the fix.\n\n%9$@: The report is not related to the app itself, or the issue is not caused by the app.\n\n%10$@: Unable to reproduce the issue based on the report, more information is needed.\n\n%11$@: The information provided is insufficient to identify the issue, more details are required."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@：反馈暂未被阅读，或是正在验证问题。\n\n%2$@：报告中描述的是预期中的表现。\n\n%3$@：报告中的问题无法被修复，或是不具有可行性。\n\n%4$@：在你提交此报告前，已有另一人提出了相同的问题，你仍会在第一个报告得到修复后收到“已修复”的状态更新。\n        你的报告可能会与那些初看似乎具有相同根源的类似报告分到一组。但是，类似的报告也可能包含多种原因。如果你发现该修复方案解决了类似报告中的问题，但无法完全解决你报告的问题，请提交新报告。\n\n%5$@：短时间内可能无法解决此问题。\n\n%6$@：Darock 正在为此问题提供修复方案。\n\n%7$@：修复工作已完成，但还未提交更新或是更新正在等待发布。\n\n%8$@：修复工作已完成，可更新至最新版本验证修复。\n\n%9$@：报告与 App 本身无关，或是问题并非由 App 本身引起。\n\n%10$@：未能通过报告中的问题复现问题，需要提供更多信息。\n\n%11$@：提供的信息不足以让我们确定问题，你需要补充更多信息。"
+          }
+        }
+      }
+    },
+    "%@已修复" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ Fixed"
+          }
+        }
+      }
+    },
+    "%@已在未来版本修复" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ Fixed in Future Versions"
+          }
+        }
+      }
+    },
+    "%@按预期工作" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ Work as Expected"
+          }
+        }
+      }
+    },
+    "%@搁置" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ Shelved"
+          }
+        }
+      }
+    },
+    "%@无法修复" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ Unable to Fix"
+          }
+        }
+      }
+    },
+    "%@未标记" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ Unmarked"
+          }
+        }
+      }
+    },
+    "%@未能复现" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ Cannot Reproduce"
+          }
+        }
+      }
+    },
+    "%@正在修复" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ Fixing"
+          }
+        }
+      }
+    },
+    "%@问题并不与 App 相关" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ Unrelated"
+          }
+        }
+      }
+    },
+    "%@问题重复" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ Duplicate"
+          }
+        }
+      }
+    },
+    "%@需要更多细节" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ Details Required"
+          }
+        }
+      }
+    },
+    "%lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        }
+      }
+    },
+    "App 版本" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "App Version"
+          }
+        }
+      }
+    },
+    "Appdiagnose" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Appdiagnose"
+          }
+        }
+      }
+    },
+    "appdiagnose Logs" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "appdiagnose Logs"
+          }
+        }
+      }
+    },
+    "appdiagnose_%@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "appdiagnose_%@"
+          }
+        }
+      }
+    },
+    "FB%@%@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "FB%1$@%2$@"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "FB%1$@%2$@"
+          }
+        }
+      }
+    },
+    "ID: %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ID: %@"
+          }
+        }
+      }
+    },
+    "OS.drkdatao" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OS.drkdatao"
+          }
+        }
+      }
+    },
+    "Settings.drkdatas" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Settings.drkdatas"
+          }
+        }
+      }
+    },
+    "v%@ Build %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "v%1$@ Build %2$@"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "v%1$@ Build %2$@"
+          }
+        }
+      }
+    },
+    "Version.drkdatav" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Version.drkdatav"
+          }
+        }
+      }
+    },
+    "与此反馈重复" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Duplicate to"
+          }
+        }
+      }
+    },
+    "了解反馈状态" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Understanding Feedback Status"
+          }
+        }
+      }
+    },
+    "你要存储当前的草稿吗？" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Do you want to save the draft?"
+          }
+        }
+      }
+    },
+    "关联反馈" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Related Feedback"
+          }
+        }
+      }
+    },
+    "最近的历史记录" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recent History"
+          }
+        }
+      }
+    },
+    "删除草稿" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete Draft"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "删除草稿"
+          }
+        }
+      }
+    },
+    "反馈助理" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Feedback Assistant"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "反馈助理"
+          }
+        }
+      }
+    },
+    "反馈状态" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Feedback Status"
+          }
+        }
+      }
+    },
+    "反馈类型" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Feedback Type"
+          }
+        }
+      }
+    },
+    "发送的反馈" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sent Feedbacks"
+          }
+        }
+      }
+    },
+    "取消" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancel"
+          }
+        }
+      }
+    },
+    "回复" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reply"
+          }
+        }
+      }
+    },
+    "回复信息" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Content"
+          }
+        }
+      }
+    },
+    "存储草稿" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Save Draft"
+          }
+        }
+      }
+    },
+    "已修复" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fixed"
+          }
+        }
+      }
+    },
+    "已发送" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sent"
+          }
+        }
+      }
+    },
+    "已在未来版本修复" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fixed in Future Versions"
+          }
+        }
+      }
+    },
+    "常见问题" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "FAQs"
+          }
+        }
+      }
+    },
+    "建议" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suggest"
+          }
+        }
+      }
+    },
+    "按预期工作" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Work as Expected"
+          }
+        }
+      }
+    },
+    "换行" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Return"
+          }
+        }
+      }
+    },
+    "描述" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Description"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "描述"
+          }
+        }
+      }
+    },
+    "描述行%lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Description Line %lld"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "描述行 %lld"
+          }
+        }
+      }
+    },
+    "提交" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Submit"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "提交"
+          }
+        }
+      }
+    },
+    "提交反馈" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Submit Feedback"
+          }
+        }
+      }
+    },
+    "提交反馈前，请先检查常见问题" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please check out the FAQs before submitting a feedback."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "提交反馈前，请先检查常见问题"
+          }
+        }
+      }
+    },
+    "搁置" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shelved"
+          }
+        }
+      }
+    },
+    "新建反馈" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New Feedback"
+          }
+        }
+      }
+    },
+    "无法修复" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unable to Fix"
+          }
+        }
+      }
+    },
+    "服务器错误" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Server Error"
+          }
+        }
+      }
+    },
+    "未完成的编辑" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unfinished editing"
+          }
+        }
+      }
+    },
+    "未标记" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unmarked"
+          }
+        }
+      }
+    },
+    "未知错误" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unknown Error"
+          }
+        }
+      }
+    },
+    "未能复现" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cannot Reproduce"
+          }
+        }
+      }
+    },
+    "标题" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Title"
+          }
+        }
+      }
+    },
+    "标题不能为空" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Title cannot be empty"
+          }
+        }
+      }
+    },
+    "正在修复" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fixing"
+          }
+        }
+      }
+    },
+    "正在加载" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Loading"
+          }
+        }
+      }
+    },
+    "此反馈已关闭，若要重新进行反馈，请创建一个新的反馈" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This feedback had been closed. Create a new feedback if you want to report again."
+          }
+        }
+      }
+    },
+    "添加附件" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add Attachments"
+          }
+        }
+      }
+    },
+    "状态" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "State"
+          }
+        }
+      }
+    },
+    "由“反馈助理”收集的诊断数据可能包含个人信息。你可以在提交前轻点查看附加数据，或向左轻扫删除。" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The diagnose datas collected by Feedback Assistant may contains personal informations. You can tap to check attached datas before submitting, or swipe left to delete."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "由“反馈助理”收集的诊断数据可能包含个人信息。你可以在提交前轻点查看附加数据，或向左轻扫删除。"
+          }
+        }
+      }
+    },
+    "移除诊断信息" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Remove Diagnose Infos"
+          }
+        }
+      }
+    },
+    "移除诊断信息会限制我们理解并解决问题的能力。" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Removing diagnose datas will limit our ability of understanding and resolving the issue."
+          }
+        }
+      }
+    },
+    "类型" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Type"
+          }
+        }
+      }
+    },
+    "系统版本" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "System Version"
+          }
+        }
+      }
+    },
+    "被删除" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deleted"
+          }
+        }
+      }
+    },
+    "设置" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Settings"
+          }
+        }
+      }
+    },
+    "请为你的反馈提供描述性的标题：" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please add a descriptive title for your feedback:"
+          }
+        }
+      }
+    },
+    "请包括：\n- 问题的清晰描述\n- 逐步说明重现问题的详细步骤（如果可能）\n- 期望的结果\n- 当前所示结果" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please Include: \n- A clear description of the issue\n- Step-by-step instruction of how to reproduce the issue (if available)\n- Expected result\n- Current result"
+          }
+        }
+      }
+    },
+    "请描述该问题以及重现问题的步骤：" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please describe the issue and the steps to reproduce: "
+          }
+        }
+      }
+    },
+    "通知令牌" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notification Token"
+          }
+        }
+      }
+    },
+    "错误/异常行为" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Error"
+          }
+        }
+      }
+    },
+    "问题并不与App相关" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unrelated"
+          }
+        }
+      }
+    },
+    "问题重复" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Duplicate"
+          }
+        }
+      }
+    },
+    "附件" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Attachments"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "附件"
+          }
+        }
+      }
+    },
+    "需要更多细节" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Details Required"
+          }
+        }
+      }
+    },
+    "额外历史记录" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Additional History"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
