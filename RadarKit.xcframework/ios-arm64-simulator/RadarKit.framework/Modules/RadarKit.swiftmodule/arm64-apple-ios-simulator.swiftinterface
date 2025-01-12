@@ -4,7 +4,7 @@
 import Combine
 import CommonCrypto
 import Foundation
-import NotifKit
+@_exported import NotifKit
 import OSLog
 import PhotosUI
 @_exported import RadarKit

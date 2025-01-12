@@ -14,7 +14,7 @@
 		</data>
 		<key>Modules/RadarKit.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		KgdolCPNdmqL72o+wpCfbd5QPJc=
+		owol4XptbM4I2QTTcYgsdN9XhEM=
 		</data>
 		<key>Modules/RadarKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Modules/RadarKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		rmZbp8ap0L+U9O4kZT41BldzyAU=
+		ddBhWuxUs47Waghk8Xc7aDbLbLc=
 		</data>
 		<key>Modules/RadarKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/RadarKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		W9muTxpepjaH6Gd4QBvsW196Src=
+		ipu9EwwPZTiGdbHrsVuP+Cqddvg=
 		</data>
 		<key>Modules/RadarKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Dg81In6/CPI7d3lDqhgDHzcNMXo=
+		4g1+10o1vVmcZtrhb4Jq+KI9JOw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -44,7 +44,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vEuee4JI70MS/dlW1Tpe0LbMCA4=
+			Kd0r7YMXaD2p/vNuYicmN09Hc5M=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -63,7 +63,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VovnBaGzVfeW3/ZjLR2kF4xZ55kL0yRJBlpxqnlF1EI=
+			2g6UeS3AWmUPu1B2M1QSBhKNo28aPERRM4m3/dN7S/g=
 			</data>
 		</dict>
 		<key>Modules/RadarKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -77,7 +77,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AlW30l+OqY5saV4xpnrsbbjLHrrI1rIaprm/wRmPOUg=
+			57Bk8kXnKdfgHZB0GGNUAQalIXnR8t9QauINZNMQOKE=
 			</data>
 		</dict>
 		<key>Modules/RadarKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -91,14 +91,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			re0LIxdNB2OkRKhfiuztYQ6QeHil0M6FW4QzvxbePL8=
+			nBL//Ys2i1pghtKbpYn0qVQVJcw8laAxpyH9xNsLRrc=
 			</data>
 		</dict>
 		<key>Modules/RadarKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2BlJs+2ef9MQq51jwvVa2Pq8zX/Z9Q6ib+em++0yiac=
+			5V4VBpRcuvnLw0MfT9ln2px3ORw8kYM1egWqttaDY2s=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -112,7 +112,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DHsPmy8nqqbjAHlRn1OelqHXkcShzV48IU4tNgNRMYg=
+			sF3U44tt6Ett0ShPLtH7roFbqVGM45+5nWqqWv45zIk=
 			</data>
 			<key>optional</key>
 			<true/>

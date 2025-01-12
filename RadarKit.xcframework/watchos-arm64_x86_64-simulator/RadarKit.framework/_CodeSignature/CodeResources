@@ -14,11 +14,11 @@
 		</data>
 		<key>Modules/RadarKit.swiftmodule/Project/arm64-apple-watchos-simulator.swiftsourceinfo</key>
 		<data>
-		F0HsZXSe9APcG0PuGT9P70BMNL4=
+		lYz9CzdUNVBtfcTViQgNemdLQm0=
 		</data>
 		<key>Modules/RadarKit.swiftmodule/Project/x86_64-apple-watchos-simulator.swiftsourceinfo</key>
 		<data>
-		YJW4h9taHEZr/otdHFQDmoaqKb0=
+		08jeAXZNJMHYFqtCObeHl39WsD4=
 		</data>
 		<key>Modules/RadarKit.swiftmodule/arm64-apple-watchos-simulator.abi.json</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/RadarKit.swiftmodule/arm64-apple-watchos-simulator.private.swiftinterface</key>
 		<data>
-		HpEU01QD23hRDOo4ZdK8YgQdN1I=
+		IlKuj1qSOHle9QSnx1p4yR2iGfI=
 		</data>
 		<key>Modules/RadarKit.swiftmodule/arm64-apple-watchos-simulator.swiftdoc</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/RadarKit.swiftmodule/arm64-apple-watchos-simulator.swiftinterface</key>
 		<data>
-		paCnlpDqcC8yUfMt75w+6mHhmTM=
+		JepGmaOvCv9kY5o3KulkYX0HL4A=
 		</data>
 		<key>Modules/RadarKit.swiftmodule/arm64-apple-watchos-simulator.swiftmodule</key>
 		<data>
-		azDXMWUW5XAYjmVh9SfGRvHsMkc=
+		FUOkmuDmbn4tgxiJAddAoCfahG4=
 		</data>
 		<key>Modules/RadarKit.swiftmodule/x86_64-apple-watchos-simulator.abi.json</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/RadarKit.swiftmodule/x86_64-apple-watchos-simulator.private.swiftinterface</key>
 		<data>
-		aS+engG/xLIQwNTEgvX+eEfFiX0=
+		RldumsYyb7F3q09rRZBDt4CHq84=
 		</data>
 		<key>Modules/RadarKit.swiftmodule/x86_64-apple-watchos-simulator.swiftdoc</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Modules/RadarKit.swiftmodule/x86_64-apple-watchos-simulator.swiftinterface</key>
 		<data>
-		puSpbAC6rVb3qMcVf9e0ADHxSVM=
+		JCkEdN8O1c8EBckLaQBNTEdlmlw=
 		</data>
 		<key>Modules/RadarKit.swiftmodule/x86_64-apple-watchos-simulator.swiftmodule</key>
 		<data>
-		1+GYGtIX4MoI8uAVnzIVG5jeJdM=
+		Mkg4WKrZvp6R/TUb6A4LLIKcCMQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -68,7 +68,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vEuee4JI70MS/dlW1Tpe0LbMCA4=
+			Kd0r7YMXaD2p/vNuYicmN09Hc5M=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -87,14 +87,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YjOS589xyh0Lc00mHK4HLYo771jeXnxor2s3kWiwwU8=
+			pukl5S220yjMU0DUMrJ80uK2cPexW0xnVQDoxF8XUrs=
 			</data>
 		</dict>
 		<key>Modules/RadarKit.swiftmodule/Project/x86_64-apple-watchos-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6V6sMkLOEPeNGoRdKqzrG6ZS8iqI6pGwAwCR89SnBos=
+			Ukdqf/kGNdoYuidemJGMPeyg4a4Hf7HxlC85HF/zByQ=
 			</data>
 		</dict>
 		<key>Modules/RadarKit.swiftmodule/arm64-apple-watchos-simulator.abi.json</key>
@@ -108,7 +108,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2xhGGkce0axgPXdLp4ykcs25ajUNVzOiYzXVIjBMhVQ=
+			RVnhGjuwvchvJ68mELxK5++oO/MZ1fcnla0jRE6mfjA=
 			</data>
 		</dict>
 		<key>Modules/RadarKit.swiftmodule/arm64-apple-watchos-simulator.swiftdoc</key>
@@ -122,14 +122,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hA8Z+nnzHipYq9ONzUYO1ayM0ju0KjYrIc+xkXsTXMs=
+			jI+nqdjfqDI2Gun0HJBhUFGcYVzTWTQzyqaK18aL8yQ=
 			</data>
 		</dict>
 		<key>Modules/RadarKit.swiftmodule/arm64-apple-watchos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wizIEdf/MpAhipZ6DtnQQmMsmDXMxh2IW5byK0LHj+g=
+			kCg1XOPZ+XvYydUmN9w1Dzy1lDJ4Vo4YueWC8wShJrU=
 			</data>
 		</dict>
 		<key>Modules/RadarKit.swiftmodule/x86_64-apple-watchos-simulator.abi.json</key>
@@ -143,7 +143,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7Eq650ON6UH9h98ZKqH4nh5RV1o1PwEIU8gKTf1M2fQ=
+			Z8E63z9MON3zWnTzsAe8m32inn9Agc3cFWrn/kvg9Ms=
 			</data>
 		</dict>
 		<key>Modules/RadarKit.swiftmodule/x86_64-apple-watchos-simulator.swiftdoc</key>
@@ -157,14 +157,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			l8g45F7znYwSzQtJMXFUzdAV3e5GzurgcCpA2yX7VWo=
+			sXgaAFptIwzLQlMuYfM1UZwsVOAeoQergYe8jAEAIw8=
 			</data>
 		</dict>
 		<key>Modules/RadarKit.swiftmodule/x86_64-apple-watchos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AIdc2K/5Og9ksYIDTAoKoZdja4EcHCPPIkqE6X7jbq0=
+			M2SCkSfHrZ7FZViwTdTMDI/G29RWfsXzNIlEeKwukkA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -178,7 +178,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DHsPmy8nqqbjAHlRn1OelqHXkcShzV48IU4tNgNRMYg=
+			sF3U44tt6Ett0ShPLtH7roFbqVGM45+5nWqqWv45zIk=
 			</data>
 			<key>optional</key>
 			<true/>
