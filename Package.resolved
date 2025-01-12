@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "radarkitcore",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Darock-Studio/RadarKitCore",
+      "state" : {
+        "branch" : "main",
+        "revision" : "0edc2cf9d07a0c52490060c95a7f44c94bf25ec1"
+      }
+    }
+  ],
+  "version" : 2
+}
