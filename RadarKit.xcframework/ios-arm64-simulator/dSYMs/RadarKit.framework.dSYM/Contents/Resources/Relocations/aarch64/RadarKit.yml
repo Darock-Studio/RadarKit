@@ -457,7 +457,7 @@ relocations:
   - { offset: 0x90B44, size: 0x8, addend: 0x0, symName: '_$s8RadarKit32radarPrepareForRemoteAppdiagnoseyyF', symObjAddr: 0x1C0, symBinAddr: 0x2A780, symSize: 0x4C }
   - { offset: 0x90B62, size: 0x8, addend: 0x0, symName: '_$s8RadarKit20ConnectivityDelegateCMa', symObjAddr: 0x20C, symBinAddr: 0x2A7CC, symSize: 0x20 }
   - { offset: 0x90B81, size: 0x8, addend: 0x0, symName: '_$sSo17OS_dispatch_queueCMa', symObjAddr: 0x4EC, symBinAddr: 0x2AA30, symSize: 0x3C }
-  - { offset: 0x90B95, size: 0x8, addend: 0x0, symName: '_$s8RadarKit20ConnectivityDelegateC7session_18didReceiveUserInfoySo9WCSessionC_SDySSypGtFyyScMYccfU_TA', symObjAddr: 0x54C, symBinAddr: 0x2AA90, symSize: 0x8 }
+  - { offset: 0x90B95, size: 0x8, addend: 0x0, symName: '_$s8RadarKit20ConnectivityDelegateC7session_17didReceiveMessageySo9WCSessionC_SDySSypGtFyyScMYccfU_TA', symObjAddr: 0x54C, symBinAddr: 0x2AA90, symSize: 0x8 }
   - { offset: 0x90BA9, size: 0x8, addend: 0x0, symName: _block_copy_helper, symObjAddr: 0x554, symBinAddr: 0x2AA98, symSize: 0x10 }
   - { offset: 0x90BBD, size: 0x8, addend: 0x0, symName: _block_destroy_helper, symObjAddr: 0x564, symBinAddr: 0x2AAA8, symSize: 0x8 }
   - { offset: 0x90BD1, size: 0x8, addend: 0x0, symName: '_$s8Dispatch0A13WorkItemFlagsVACs10SetAlgebraAAWl', symObjAddr: 0x56C, symBinAddr: 0x2AAB0, symSize: 0x48 }
@@ -465,11 +465,11 @@ relocations:
   - { offset: 0x90C7B, size: 0x8, addend: 0x0, symName: '_$s8RadarKit20ConnectivityDelegateC24sessionDidBecomeInactiveyySo9WCSessionCFTo', symObjAddr: 0x6C, symBinAddr: 0x2A62C, symSize: 0x4 }
   - { offset: 0x90C8F, size: 0x8, addend: 0x0, symName: '_$s8RadarKit20ConnectivityDelegateC20sessionDidDeactivateyySo9WCSessionCFTo', symObjAddr: 0x70, symBinAddr: 0x2A630, symSize: 0x4 }
   - { offset: 0x90D15, size: 0x8, addend: 0x0, symName: '_$s8RadarKit20ConnectivityDelegateC7session_25activationDidCompleteWith5errorySo9WCSessionC_So0K15ActivationStateVs5Error_pSgtFTo', symObjAddr: 0x74, symBinAddr: 0x2A634, symSize: 0x4 }
-  - { offset: 0x90D36, size: 0x8, addend: 0x0, symName: '_$s8RadarKit20ConnectivityDelegateC7session_18didReceiveUserInfoySo9WCSessionC_SDySSypGtFyyScMYccfU_', symObjAddr: 0x78, symBinAddr: 0x2A638, symSize: 0x60 }
-  - { offset: 0x90D87, size: 0x8, addend: 0x0, symName: '_$s8RadarKit20ConnectivityDelegateC7session_18didReceiveUserInfoySo9WCSessionC_SDySSypGtFTo', symObjAddr: 0xD8, symBinAddr: 0x2A698, symSize: 0x78 }
+  - { offset: 0x90D36, size: 0x8, addend: 0x0, symName: '_$s8RadarKit20ConnectivityDelegateC7session_17didReceiveMessageySo9WCSessionC_SDySSypGtFyyScMYccfU_', symObjAddr: 0x78, symBinAddr: 0x2A638, symSize: 0x60 }
+  - { offset: 0x90D87, size: 0x8, addend: 0x0, symName: '_$s8RadarKit20ConnectivityDelegateC7session_17didReceiveMessageySo9WCSessionC_SDySSypGtFTo', symObjAddr: 0xD8, symBinAddr: 0x2A698, symSize: 0x78 }
   - { offset: 0x90DC5, size: 0x8, addend: 0x0, symName: '_$s8RadarKit20ConnectivityDelegateCACycfcTo', symObjAddr: 0x150, symBinAddr: 0x2A710, symSize: 0x3C }
   - { offset: 0x90DFA, size: 0x8, addend: 0x0, symName: '_$s8RadarKit20ConnectivityDelegateCfD', symObjAddr: 0x18C, symBinAddr: 0x2A74C, symSize: 0x30 }
-  - { offset: 0x90E52, size: 0x8, addend: 0x0, symName: '_$s8RadarKit20ConnectivityDelegateC7session_18didReceiveUserInfoySo9WCSessionC_SDySSypGtFTf4dnd_n', symObjAddr: 0x26C, symBinAddr: 0x2A7EC, symSize: 0x244 }
+  - { offset: 0x90E52, size: 0x8, addend: 0x0, symName: '_$s8RadarKit20ConnectivityDelegateC7session_17didReceiveMessageySo9WCSessionC_SDySSypGtFTf4dnd_n', symObjAddr: 0x26C, symBinAddr: 0x2A7EC, symSize: 0x244 }
   - { offset: 0x90FE1, size: 0x8, addend: 0x0, symName: '_$s8RadarKit13requestString_7headerss6ResultOySSs5Error_pGSS_SDyS2SGtYaF', symObjAddr: 0x0, symBinAddr: 0x2AB44, symSize: 0x1C }
   - { offset: 0x91000, size: 0x8, addend: 0x0, symName: '_$s8RadarKit13requestString_7headerss6ResultOySSs5Error_pGSS_SDyS2SGtYaF', symObjAddr: 0x0, symBinAddr: 0x2AB44, symSize: 0x1C }
   - { offset: 0x91055, size: 0x8, addend: 0x0, symName: '_$s8RadarKit13requestString_7headerss6ResultOySSs5Error_pGSS_SDyS2SGtYaFyScCyAGs5NeverOGXEfU_', symObjAddr: 0x30C, symBinAddr: 0x2AE50, symSize: 0x4FC }
