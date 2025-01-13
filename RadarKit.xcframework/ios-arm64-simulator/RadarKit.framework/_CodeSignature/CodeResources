@@ -14,7 +14,7 @@
 		</data>
 		<key>Modules/RadarKit.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		t0ztmjdYuR8AQEB2UZVvj4j1izE=
+		jkafxO47nouGd4eFXeAmw9JezO8=
 		</data>
 		<key>Modules/RadarKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/RadarKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		s8lSxsplhuGk4dBH9JeB57q08Ag=
+		IhOJ1g75bW5sJKdZGaFiITRq00k=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -63,7 +63,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+PwXGte2V7vf1+F9SSaBB0NHgE8zNa0581dnUFR9ykc=
+			cAFy+XnHGowGTMeu1YaoX5U5kkAs9KAioCsekw9jLFc=
 			</data>
 		</dict>
 		<key>Modules/RadarKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -98,7 +98,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			k9vgSL1eQE5RwMdpDY6VrpffI4pe1JDWUEbYQ/Qw7JU=
+			HZsOdynrRQOUTzMmy10S+M+/awt4jabzXCfm7MTa+eU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
