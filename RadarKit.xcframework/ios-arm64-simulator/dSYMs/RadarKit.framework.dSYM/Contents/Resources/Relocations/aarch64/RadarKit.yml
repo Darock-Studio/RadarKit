@@ -449,8 +449,8 @@ relocations:
   - { offset: 0x9080E, size: 0x8, addend: 0x0, symName: '_$s8RadarKit8NewsViewV7SwiftUI0D0AadEP4body4BodyQzvgTW', symObjAddr: 0x474C, symBinAddr: 0x2770C, symSize: 0x38 }
   - { offset: 0x90822, size: 0x8, addend: 0x0, symName: '_$s8RadarKit14SingleNewsFile33_2E99E65FF7FF51D25AEAC854628998D8LLVs12IdentifiableAAsAEP2id2IDQzvgTW', symObjAddr: 0x4AFC, symBinAddr: 0x279E8, symSize: 0xC }
   - { offset: 0x90940, size: 0x8, addend: 0x0, symName: '_$s8RadarKit30receiveWatchAppdiagnoseSubject_WZ', symObjAddr: 0x0, symBinAddr: 0x2A5C0, symSize: 0x40 }
-  - { offset: 0x90964, size: 0x8, addend: 0x0, symName: '_$s8RadarKit30receiveWatchAppdiagnoseSubject7Combine011PassthroughF0CySDyS2SGs5NeverOGvp', symObjAddr: 0x4DF8, symBinAddr: 0x4E7A8, symSize: 0x0 }
-  - { offset: 0x9097E, size: 0x8, addend: 0x0, symName: '_$s8RadarKit20ConnectivityDelegateC7defaultACvpZ', symObjAddr: 0x4E00, symBinAddr: 0x4E7B0, symSize: 0x0 }
+  - { offset: 0x90964, size: 0x8, addend: 0x0, symName: '_$s8RadarKit30receiveWatchAppdiagnoseSubject7Combine011PassthroughF0CySDyS2SGs5NeverOGvp', symObjAddr: 0x4E08, symBinAddr: 0x4E7A8, symSize: 0x0 }
+  - { offset: 0x9097E, size: 0x8, addend: 0x0, symName: '_$s8RadarKit20ConnectivityDelegateC7defaultACvpZ', symObjAddr: 0x4E10, symBinAddr: 0x4E7B0, symSize: 0x0 }
   - { offset: 0x90AA8, size: 0x8, addend: 0x0, symName: '_$s8RadarKit30receiveWatchAppdiagnoseSubject_WZ', symObjAddr: 0x0, symBinAddr: 0x2A5C0, symSize: 0x40 }
   - { offset: 0x90AD8, size: 0x8, addend: 0x0, symName: '_$s8RadarKit20ConnectivityDelegateC7default_WZ', symObjAddr: 0x40, symBinAddr: 0x2A600, symSize: 0x2C }
   - { offset: 0x90B19, size: 0x8, addend: 0x0, symName: '_$s8RadarKit20ConnectivityDelegateCfETo', symObjAddr: 0x1BC, symBinAddr: 0x2A77C, symSize: 0x4 }

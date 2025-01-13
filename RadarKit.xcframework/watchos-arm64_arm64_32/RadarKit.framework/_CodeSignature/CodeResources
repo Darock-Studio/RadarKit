@@ -14,11 +14,11 @@
 		</data>
 		<key>Modules/RadarKit.swiftmodule/Project/arm64-apple-watchos.swiftsourceinfo</key>
 		<data>
-		NjaXxS4IWmWANht/hxObJHZDT4M=
+		cmQz4Oe3qeFNxo9DBUigRPA3tuQ=
 		</data>
 		<key>Modules/RadarKit.swiftmodule/Project/arm64_32-apple-watchos.swiftsourceinfo</key>
 		<data>
-		kyPSgmeXbaZRtQQtrnraU9iXKqM=
+		nL0K4mpBZCkalHUtBf30lf9QXp8=
 		</data>
 		<key>Modules/RadarKit.swiftmodule/arm64-apple-watchos.abi.json</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/RadarKit.swiftmodule/arm64-apple-watchos.swiftmodule</key>
 		<data>
-		gbp/EwgorAINEeS6861yST1XY0o=
+		V0CZX+Y0XsHKxY55plp1niUr348=
 		</data>
 		<key>Modules/RadarKit.swiftmodule/arm64_32-apple-watchos.abi.json</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/RadarKit.swiftmodule/arm64_32-apple-watchos.swiftmodule</key>
 		<data>
-		xMaCvS/khPHcBWXR4sQ+XkLfj10=
+		BAUwTsOInA69U+uPBNq+9bOuqiU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -91,22 +91,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NjaXxS4IWmWANht/hxObJHZDT4M=
+			cmQz4Oe3qeFNxo9DBUigRPA3tuQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			7K+Wflne+u+He9uRy867bMxLmNDuQNGktuwaLaIp6rk=
+			l0N1d1XrhtB0KdkkeJisYTFwRGMhSNaR54rZAT3fJAc=
 			</data>
 		</dict>
 		<key>Modules/RadarKit.swiftmodule/Project/arm64_32-apple-watchos.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			kyPSgmeXbaZRtQQtrnraU9iXKqM=
+			nL0K4mpBZCkalHUtBf30lf9QXp8=
 			</data>
 			<key>hash2</key>
 			<data>
-			evUErjPr53bF6FapGvHf8MfrOB5Uu0IO+20Tsy4uj24=
+			4xc3sqgd7VndRZNiQA6z6ix19pMFiWc7O9wzoVvtoZc=
 			</data>
 		</dict>
 		<key>Modules/RadarKit.swiftmodule/arm64-apple-watchos.abi.json</key>
@@ -157,11 +157,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gbp/EwgorAINEeS6861yST1XY0o=
+			V0CZX+Y0XsHKxY55plp1niUr348=
 			</data>
 			<key>hash2</key>
 			<data>
-			QLVaqPlS/ec1DdOPkg4m9607HgPww6HqRWyD7qDHWmw=
+			+U5Fx3kB0VgOwzhJt9KvthwlgpYuNwiBgygsPbByGko=
 			</data>
 		</dict>
 		<key>Modules/RadarKit.swiftmodule/arm64_32-apple-watchos.abi.json</key>
@@ -212,11 +212,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xMaCvS/khPHcBWXR4sQ+XkLfj10=
+			BAUwTsOInA69U+uPBNq+9bOuqiU=
 			</data>
 			<key>hash2</key>
 			<data>
-			awrtN+Q9Adec1xXZxPXxbPWnMrzMjWKmqSzpDtPbQH4=
+			CH559n2Xt8411izP6CeFu+MYi1+1Wx6qxsm+MqXh/CQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
