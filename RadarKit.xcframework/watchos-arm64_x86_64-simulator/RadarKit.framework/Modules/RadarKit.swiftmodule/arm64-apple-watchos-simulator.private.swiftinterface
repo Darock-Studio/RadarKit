@@ -4,6 +4,7 @@
 import Combine
 import CommonCrypto
 import Foundation
+import MarkdownUI
 import OSLog
 import PhotosUI
 @_exported import RadarKit
@@ -33,6 +34,7 @@ extension RadarKit.RKFeedbackView {
   @_Concurrency.MainActor @preconcurrency public func radarTipper(_ tipper: @escaping (Swift.String, Swift.String) -> Swift.Void) -> RadarKit.RKFeedbackView
   @_Concurrency.MainActor @preconcurrency public func radarOnNewFeedbackAppear(_ action: @escaping () -> Swift.Void) -> RadarKit.RKFeedbackView
   @_Concurrency.MainActor @preconcurrency public func radarMessageHiddenKeys(_ keys: [Swift.String]) -> RadarKit.RKFeedbackView
+  @available(*, deprecated, message: "Markdown render is now embedded in RadarKit natively, this modifier no longer makes sense.")
   @_Concurrency.MainActor @preconcurrency public func radarMessageMarkdownRender<T>(@SwiftUICore.ViewBuilder _ render: @escaping (Swift.String) -> T) -> RadarKit.RKFeedbackView where T : SwiftUICore.View
   @_Concurrency.MainActor @preconcurrency public func radarIssuePlaces<T>(@SwiftUICore.ViewBuilder _ places: @escaping () -> T) -> RadarKit.RKFeedbackView where T : SwiftUICore.View
   @_Concurrency.MainActor @preconcurrency public func radarConstantTags(_ tags: [RadarKit.RKFeedbackTag]) -> RadarKit.RKFeedbackView

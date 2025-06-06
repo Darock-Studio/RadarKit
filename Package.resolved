@@ -1,12 +1,30 @@
 {
   "pins" : [
     {
+      "identity" : "darockui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Darock-Studio/DarockUI",
+      "state" : {
+        "branch" : "main",
+        "revision" : "373cf8cc67206e4c475e23e689bfc8cfb5d9b2c3"
+      }
+    },
+    {
+      "identity" : "markdownui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Darock-Package-Distribution/MarkdownUI",
+      "state" : {
+        "branch" : "main",
+        "revision" : "dfc4681f7bb1dfd3693ccdf9118153bbdfdd2fb9"
+      }
+    },
+    {
       "identity" : "radarkitcore",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Darock-Studio/RadarKitCore",
       "state" : {
         "branch" : "main",
-        "revision" : "0edc2cf9d07a0c52490060c95a7f44c94bf25ec1"
+        "revision" : "3a74b5742d4fc2725244095bf4768c8eacdf8aea"
       }
     }
   ],
