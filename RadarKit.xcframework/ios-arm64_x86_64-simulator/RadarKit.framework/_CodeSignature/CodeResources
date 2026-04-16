@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>.DS_Store</key>
+		<data>
+		GiVvSpV4DXXayOoB0rsW46z/owU=
+		</data>
 		<key>Headers/RadarKit.h</key>
 		<data>
 		iD4ztYvdpNIqIzDtKDkLs7Zc1B4=
@@ -14,11 +18,11 @@
 		</data>
 		<key>Modules/RadarKit.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		HyUcoVd/ACVvBrUq4z+GFvO5CP4=
+		HJUcyThTg8okcLGEGOo7vhgyljI=
 		</data>
 		<key>Modules/RadarKit.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		o0bUGirx3REU3+GZGgddKgZYLlM=
+		E5U0JD4FL6fxbnv9XzUs3zEzzuc=
 		</data>
 		<key>Modules/RadarKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -87,14 +91,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fKO3iNkGXuKecpS5rqFTyacS5dUJdlFal8n7t1NO/2U=
+			nqeYO0v9ifxC2bkwm9Z+4b/a9UzK/UAOY0ZvhRGwJhY=
 			</data>
 		</dict>
 		<key>Modules/RadarKit.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TY5/Fys3z5Visb+4phd1n2kfz372x/Klxg83449zndg=
+			+GEFQ3ybaToBGTt7mm5fQ+5J/pWZdiQUP8d8yrs/NhY=
 			</data>
 		</dict>
 		<key>Modules/RadarKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>

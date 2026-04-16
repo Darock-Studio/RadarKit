@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>.DS_Store</key>
+		<data>
+		HYoEHTlQatWASqXfDBv4C0T+rTA=
+		</data>
 		<key>Headers/RadarKit.h</key>
 		<data>
 		iD4ztYvdpNIqIzDtKDkLs7Zc1B4=
@@ -14,7 +18,7 @@
 		</data>
 		<key>Modules/RadarKit.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		rgFLevxaNndHCv2F5wGdg0KmsuU=
+		mUAs9cWfjXj+t7XXCw+niE8LKhc=
 		</data>
 		<key>Modules/RadarKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -63,7 +67,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pXI65nZFebX8fvkop6QvS8dzZ0/QrsWGDWrj3wqx1Ig=
+			qVdpsprq6fNU6GoKLRodGje+i8V7+/fBAJKUchWJKOc=
 			</data>
 		</dict>
 		<key>Modules/RadarKit.swiftmodule/arm64-apple-ios.abi.json</key>
