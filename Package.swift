@@ -10,13 +10,13 @@ let package = Package(
         .library(name: "RadarKit", targets: ["RadarKit", "_RadarKitDependenciesWrapper"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/Darock-Studio/RadarKitCore", branch: "main"),
-        .package(url: "https://github.com/Darock-Package-Distribution/MarkdownUI", branch: "main")
+        .package(url: "https://github.com/Darock-Studio/RadarKitCore", from: "1.0.0"),
+        .package(url: "https://github.com/Darock-Package-Distribution/MarkdownUI", from: "1.0.0")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
-        .binaryTarget(name: "RadarKit", path: "RadarKit.xcframework"),
+        .binaryTarget(name: "RadarKit", url: "", checksum: ""),
         .target(name: "_RadarKitDependenciesWrapper", dependencies: [
             "RadarKitCore",
             "MarkdownUI"

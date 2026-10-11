@@ -1,12 +1,30 @@
 {
   "pins" : [
     {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire",
+      "state" : {
+        "revision" : "bda9ed57d72988a3a2ada33d824583541f86eac6",
+        "version" : "5.12.2"
+      }
+    },
+    {
+      "identity" : "darockfoundation",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Darock-Studio/DarockFoundation",
+      "state" : {
+        "revision" : "32feaf7627949ff1f13778eb53d8805bfd75c720",
+        "version" : "1.0.2"
+      }
+    },
+    {
       "identity" : "darockui",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Darock-Studio/DarockUI",
       "state" : {
-        "branch" : "main",
-        "revision" : "373cf8cc67206e4c475e23e689bfc8cfb5d9b2c3"
+        "revision" : "311d0341b209aed10bb20eee7d53b72ce6f2ea5e",
+        "version" : "1.0.1"
       }
     },
     {
@@ -14,8 +32,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Darock-Package-Distribution/MarkdownUI",
       "state" : {
-        "branch" : "main",
-        "revision" : "dfc4681f7bb1dfd3693ccdf9118153bbdfdd2fb9"
+        "revision" : "a621c352809af10ddb07d847acbe1dbf10ad2139",
+        "version" : "1.0.0"
       }
     },
     {
@@ -23,8 +41,17 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Darock-Studio/RadarKitCore",
       "state" : {
-        "branch" : "main",
-        "revision" : "3a74b5742d4fc2725244095bf4768c8eacdf8aea"
+        "revision" : "4c202d11e6444c0f7632c39e853a2ac363fc07b4",
+        "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "swiftyjson",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SwiftyJSON/SwiftyJSON",
+      "state" : {
+        "revision" : "af76cf3ef710b6ca5f8c05f3a31307d44a3c5828",
+        "version" : "5.0.2"
       }
     }
   ],
